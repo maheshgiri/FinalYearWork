@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/zero"
+        android:layout_weight="0.3"
+        android:background="@drawable/black_back1" >
+     
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.7"
+          android:paddingLeft="@dimen/mini"
+          android:text="Pune"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/my_white"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_gravity="top"
+          android:layout_weight="0.75"
+          android:text="City of celebrations"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/my_white" />
+
+      <Button
+          android:id="@+id/button7"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="0.9"
+          android:background="@drawable/req_but1" />
+
+      <Button
+          android:id="@+id/button8"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="0.9"
+          android:background="@drawable/options" />
+
+    </LinearLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.03"
+    android:fillViewport="true">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:stretchColumns="*"
+    android:weightSum="3" >
+
+    <TableRow android:layout_weight="1">
+
+    <Button
+        android:id="@+id/req_but"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/white_col"
+        android:drawableTop="@drawable/reqs_but"
+        android:padding="@dimen/mini"
+        android:text="New Requests" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/white_col"
+        android:drawableTop="@drawable/map_but"
+        android:padding="@dimen/mini"
+        android:text="Near Requests" />
+
+    </TableRow>
+    <TableRow android:layout_weight="1">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/white_col"
+        android:drawableTop="@drawable/bus_but"
+        android:padding="@dimen/mini" 
+        android:text="Bus Routes"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/white_col"
+        android:drawableTop="@drawable/council_but"
+        android:padding="@dimen/mini" 
+        android:text="Council Met"
+        />
+
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/white_col"
+        android:drawableTop="@drawable/call_but"
+        android:padding="@dimen/mini" 
+        android:text="Call Requests"
+        />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/white_col"
+        android:drawableTop="@drawable/msg_but"
+        android:padding="@dimen/mini" 
+        android:text="Announcements"
+        />
+
+    </TableRow>
+</TableLayout>
+</ScrollView>
+</LinearLayout>
